@@ -46,7 +46,7 @@ function App() {
   const iframe = useRef(null);
   const list_row = useRef(null);
 
-  const prod_url = 'https://altpoet.ebookfoundation.org:8443/cache/epub/' + bookNum + '/pg' + bookNum + '-images.html';
+  const prod_url = import.meta.env.DATABASE_URL + '/cache/epub/' + bookNum + '/pg' + bookNum + '-images.html';
   const iframe_url = import.meta.env.PROD ? prod_url : '/iframe';
 
   const axios_headers = {'withCredentials': true,

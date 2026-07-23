@@ -22,7 +22,7 @@ export default function NavbarDiv() {
     function get_url() {
         if(searchValue === "") {return "#";}
         if(import.meta.env.PROD) {
-            return "https://altpoet.ebookfoundation.org:8443/alttext/?book=" + searchValue;
+            return import.meta.env.DATABASE_URL + "/alttexteditor/?book=" + searchValue;
         }
         else {
             return "http://127.0.0.1:5173/?book=" + searchValue;
