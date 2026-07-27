@@ -48,7 +48,7 @@ export default function NavbarDiv() {
             <Row>
                 <Col className='px-0' xs lg="8.5">
                         <Nav>
-                        <Nav.Link href="https://altpoet.ebookfoundation.org/">
+                        <Nav.Link href="https://altpoet.pglaf.org/">
                            Home
                         </Nav.Link>
                         <NavDropdown title="About">
@@ -92,7 +92,7 @@ export default function NavbarDiv() {
 
                     
                         </NavDropdown>
-                        <Nav.Link href="https://altpoet.ebookfoundation.org/alttext/">
+                        <Nav.Link href="https://altpoet.pglaf.org/alttext/">
                             Guide to Good Alt Texts
                         </Nav.Link>
                     </Nav>
