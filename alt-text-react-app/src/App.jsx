@@ -46,7 +46,9 @@ function App() {
   const iframe = useRef(null);
   const list_row = useRef(null);
 
-  const prod_url = import.meta.env.DATABASE_URL + '/cache/epub/' + bookNum + '/pg' + bookNum + '-images.html';
+  // CORS policy on www.gutenberg.org must allow access to the Origin
+  // where this code is hosted
+  const prod_url = 'https://www.gutenberg.org/cache/epub/' + bookNum + '/pg' + bookNum + '-images.html';
   const iframe_url = import.meta.env.PROD ? prod_url : '/iframe';
 
   const axios_headers = {'withCredentials': true,
