@@ -134,7 +134,7 @@ function App() {
             <Stack className='gap-3'>
               <IframeNav numSelected={numSelected} numImgs={numImgs} loadedImgList={loadedImgList} list_row_ref={list_row}/>
               <iframe ref={iframe} id="book" style={{height: "80vh", width: "auto"}} 
-              className="border border-secondary border-4" src={iframe_url}/>
+              className="border border-secondary border-4" src={iframe_url} sandbox="allow-same-origin"/>
             </Stack>
           </Col>
           <Col>
